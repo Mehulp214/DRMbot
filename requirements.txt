@@ -1,0 +1,8 @@
+pyrogram
+pyaes
+asyncio
+pytz
+aiohttp
+shlex
+argparse
+os
