@@ -10,7 +10,7 @@ from aiohttp import ClientSession
 import argparse
 
 # Initialize the Pyrogram client
-app = Client("6736865642:AAFxmkIWGgDtteisEEirpdptr6FiZn_4ZnI")
+#app = Client("6736865642:AAFxmkIWGgDtteisEEirpdptr6FiZn_4ZnI")
 
 # Logger configuration
 import logging
@@ -162,6 +162,13 @@ async def process_video(client, message):
         await message.reply_video(result, caption="Video processed successfully!")
     else:
         await message.reply("Error processing the video.")
+      
+app = Client(
+    "my_bot",
+    api_id=23476439,
+    api_hash="1626e884119a29dbccbb78e39b48128f",
+    bot_token="6736865642:AAFxmkIWGgDtteisEEirpdptr6FiZn_4ZnI"
+)
 
 # Run the bot
 app.run()
